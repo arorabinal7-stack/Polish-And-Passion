@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Polish And Passion | Premium Car Care</title>
+
+
+
+<style>
+
+:root {
+
+  --navy: #0b1d32;
+
+  --blue: #1677f9;
+
+  --light: #f3f6fa;
+
+  --white: #ffffff;
+
+  --text: #17283e;
+
+  --muted: #64748b;
+
+  --border: #e0e7ef;
+
+}
+
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+html { scroll-behavior: smooth; }
+
+
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: var(--white);
+
+  color: var(--text);
+
+  line-height: 1.6;
+
+}
+
+
+
+a { text-decoration: none; color: inherit; }
+
+button, input, textarea, select { font: inherit; }
+
+img { display: block; width: 100%; object-fit: cover; }
+
+
+
+.container {
+
+  width: min(1160px, 90%);
+
+  margin: auto;
+
+}
+
+
+
+header {
+
+  background: var(--navy);
+
+  color: white;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+}
+
+
+
+.navbar {
+
+  min-height: 76px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 24px;
+
+}
+
+
+
+.logo {
+
+  font-size: 21px;
+
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  letter-spacing: -.6px;
+
+}
+
+
+
+.logo span { color: #55a0ff; }
+
+
+
+.logo small {
+
+  display: block;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #b9c9dc;
+
+  margin-top: 5px;
+
+}
+
+
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 23px;
+
+}
+
+
+
+.nav-links a {
+
+  font-size: 13px;
+
+  color: #e3eaf4;
+
+  transition: color .2s;
+
+}
+
+
+
+.nav-links a:hover { color: #62a8ff; }
+
+
+
+.nav-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+}
+
+
+
+.btn {
+
+  display: inline-block;
+
+  background: var(--blue);
+
+  color: white;
+
+  padding: 12px 19px;
+
+  border: 1px solid var(--blue);
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: background .2s;
+
+}
+
+
+
+.btn:hover { background: #075dce; }
+
+
+
+.btn-outline {
+
+  background: transparent;
+
+  border-color: #a9bdd3;
+
+  color: white;
+
+}
+
+
+
+.btn-outline:hover {
+
+  background: white;
+
+  color: var(--navy);
+
+}
+
+
+
+.menu-toggle {
+
+  display: none;
+
+  background: none;
+
+  border: 0;
+
+  color: white;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+}
+
+
+
+/* HERO */
+
+
+
+.hero {
+
+  min-height: 510px;
+
+  display: flex;
+
+  align-items: center;
+
+  color: white;
+
+  background:
+
+    linear-gradient(90deg, rgba(5,16,29,.97) 0%,
+
+    rgba(5,16,29,.82) 38%, rgba(5,16,29,.12) 100%),
+
+    url("https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=2000&q=85")
+
+    center 55% / cover no-repeat;
+
+}
+
+
+
+.hero-content {
+
+  max-width: 580px;
+
+  padding: 75px 0;
+
+}
+
+
+
+.eyebrow {
+
+  color: var(--blue);
+
+  text-transform: uppercase;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  font-weight: 800;
+
+  margin-bottom: 12px;
+
+}
+
+
+
+.hero .eyebrow { color: #72b2ff; }
+
+
+
+.hero h1 {
+
+  font-size: clamp(39px, 5vw, 62px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 17px;
+
+}
+
+
+
+.hero h1 span { color: #55a0ff; }
+
+
+
+.hero h2 {
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.hero p {
+
+  color: #d7e0ec;
+
+  max-width: 470px;
+
+  font-size: 15px;
+
+  margin-bottom: 26px;
+
+}
+
+
+
+.hero-buttons {
+
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+/* GENERAL SECTIONS */
+
+
+
+section { scroll-margin-top: 85px; }
+
+
+
+.section { padding: 76px 0; }
+
+
+
+.section-light { background: var(--light); }
+
+
+
+.section-heading {
+
+  max-width: 620px;
+
+  margin-bottom: 32px;
+
+}
+
+
+
+.section-heading h2 {
+
+  font-size: clamp(27px, 3vw, 36px);
+
+  line-height: 1.2;
+
+  margin-bottom: 12px;
+
+  letter-spacing: -.8px;
+
+}
+
+
+
+.section-heading p {
+
+  color: var(--muted);
+
+  font-size: 15px;
+
+}
+
+
+
+.grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+
+}
+
+
+
+/* SERVICES */
+
+
+
+.service-card {
+
+  background: white;
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+}
+
+
+
+.service-card img {
+
+  height: 205px;
+
+  transition: transform .3s;
+
+}
+
+
+
+.service-card:hover img { transform: scale(1.035); }
+
+
+
+.service-content { padding: 22px; }
+
+
+
+.service-content h3 {
+
+  font-size: 18px;
+
+  margin-bottom: 9px;
+
+}
+
+
+
+.service-content p {
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  margin-bottom: 17px;
+
+}
+
+
+
+.text-link {
+
+  color: var(--blue);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+}
+
+
+
+/* PPF FINISHES */
+
+
+
+.finish-layout {
+
+  display: grid;
+
+  grid-template-columns: .85fr 1.5fr;
+
+  gap: 45px;
+
+  align-items: center;
+
+}
+
+
+
+.finish-gallery {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+}
+
+
+
+.finish-item img {
+
+  height: 190px;
+
+  border-radius: 6px;
+
+}
+
+
+
+.finish-item h3 {
+
+  margin-top: 12px;
+
+  font-size: 16px;
+
+}
+
+
+
+.finish-item p {
+
+  font-size: 13px;
+
+  color: var(--muted);
+
+}
+
+
+
+/* PRODUCTS */
+
+
+
+.product-card {
+
+  border: 1px solid var(--border);
+
+  background: white;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+}
+
+
+
+.product-card img {
+
+  height: 230px;
+
+  background: #edf2f8;
+
+}
+
+
+
+.product-info { padding: 18px; }
+
+
+
+.product-info h3 {
+
+  font-size: 16px;
+
+  margin-bottom: 6px;
+
+}
+
+
+
+.product-info p {
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  margin-bottom: 9px;
+
+}
+
+
+
+.price { font-weight: 800; color: var(--navy); }
+
+
+
+/* RECENT WORK */
+
+
+
+.work-section {
+
+  background: var(--navy);
+
+  color: white;
+
+}
+
+
+
+.work-section .section-heading p { color: #c1cede; }
+
+
+
+.filters {
+
+  display: flex;
+
+  gap: 9px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 26px;
+
+}
+
+
+
+.filter-btn {
+
+  padding: 9px 15px;
+
+  border: 1px solid #6e829b;
+
+  color: white;
+
+  background: transparent;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+}
+
+
+
+.filter-btn.active,
+
+.filter-btn:hover {
+
+  background: var(--blue);
+
+  border-color: var(--blue);
+
+}
+
+
+
+.work-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+}
+
+
+
+.work-item {
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 5px;
+
+  background: #182d45;
+
+}
+
+
+
+.work-item img {
+
+  height: 235px;
+
+  transition: transform .3s;
+
+}
+
+
+
+.work-item:hover img { transform: scale(1.04); }
+
+
+
+.work-label {
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  padding: 25px 15px 14px;
+
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+}
+
+
+
+/* ABOUT */
+
+
+
+.about-layout {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 55px;
+
+  align-items: center;
+
+}
+
+
+
+.about-image {
+
+  width: 100%;
+
+  height: 390px;
+
+  border-radius: 7px;
+
+}
+
+
+
+.about-copy h2 {
+
+  font-size: 35px;
+
+  line-height: 1.2;
+
+  margin-bottom: 17px;
+
+}
+
+
+
+.about-copy p {
+
+  color: var(--muted);
+
+  margin-bottom: 15px;
+
+  font-size: 15px;
+
+}
+
+
+
+.values {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+
+  margin: 27px 0;
+
+}
+
+
+
+.value {
+
+  border-left: 3px solid var(--blue);
+
+  padding-left: 13px;
+
+}
+
+
+
+.value h3 { font-size: 15px; }
+
+.value p { font-size: 13px; margin: 5px 0 0; }
+
+
+
+/* CONTACT */
+
+
+
+.contact-layout {
+
+  display: grid;
+
+  grid-template-columns: .8fr 1.2fr;
+
+  gap: 50px;
+
+}
+
+
+
+.contact-details p {
+
+  color: var(--muted);
+
+  margin-bottom: 16px;
+
+}
+
+
+
+.contact-form {
+
+  background: white;
+
+  padding: 28px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+
+}
+
+
+
+.form-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+}
+
+
+
+.form-group {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.form-group label {
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+}
+
+
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #d5deea;
+
+  border-radius: 4px;
+
+  outline: none;
+
+  background: white;
+
+  color: var(--text);
+
+}
+
+
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus {
+
+  border-color: var(--blue);
+
+}
+
+
+
+.form-group textarea {
+
+  min-height: 120px;
+
+  resize: vertical;
+
+}
+
+
+
+.full-width { grid-column: 1 / -1; }
+
+
+
+.note {
+
+  font-size: 12px;
+
+  color: var(--muted);
+
+  margin-top: 13px;
+
+}
+
+
+
+/* LOGIN MODAL */
+
+
+
+.modal {
+
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 200;
+
+  background: rgba(5,15,28,.75);
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+}
+
+
+
+.modal.open { display: flex; }
+
+
+
+.modal-box {
+
+  background: white;
+
+  width: min(420px, 100%);
+
+  border-radius: 8px;
+
+  padding: 30px;
+
+  position: relative;
+
+}
+
+
+
+.modal-box h2 { margin-bottom: 8px; }
+
+
+
+.modal-box > p {
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  margin-bottom: 22px;
+
+}
+
+
+
+.close-modal {
+
+  position: absolute;
+
+  right: 16px;
+
+  top: 12px;
+
+  border: 0;
+
+  background: none;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+}
+
+
+
+.tabs {
+
+  display: flex;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.tab {
+
+  flex: 1;
+
+  padding: 10px;
+
+  border: 1px solid var(--border);
+
+  background: var(--light);
+
+  cursor: pointer;
+
+  border-radius: 4px;
+
+}
+
+
+
+.tab.active {
+
+  background: var(--navy);
+
+  color: white;
+
+}
+
+
+
+.modal .btn { width: 100%; }
+
+
+
+/* FOOTER */
+
+
+
+footer {
+
+  background: #061426;
+
+  color: white;
+
+  padding: 35px 0 18px;
+
+}
+
+
+
+.footer-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+
+  padding-bottom: 25px;
+
+}
+
+
+
+.footer-links {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+}
+
+
+
+.footer-links a {
+
+  font-size: 13px;
+
+  color: #d0dbea;
+
+}
+
+
+
+.footer-bottom {
+
+  border-top: 1px solid #26384e;
+
+  padding-top: 17px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  color: #a9b9cd;
+
+  font-size: 12px;
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 1000px) {
+
+  .nav-links { gap: 12px; }
+
+  .nav-links a { font-size: 12px; }
+
+  .nav-actions .btn { padding: 9px 12px; }
+
+  .finish-layout { grid-template-columns: 1fr; gap: 25px; }
+
+  .about-layout { gap: 30px; }
+
+}
+
+
+
+@media (max-width: 760px) {
+
+  .navbar { min-height: 70px; }
+
+  .menu-toggle { display: block; }
+
+
+
+  .nav-links {
+
+    display: none;
+
+    position: absolute;
+
+    top: 70px;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 20px 5%;
+
+    background: var(--navy);
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 17px;
+
+    border-top: 1px solid #243850;
+
+  }
+
+
+
+  .nav-links.show { display: flex; }
+
+  .nav-actions { margin-left: auto; }
+
+  .nav-actions .btn { padding: 8px 10px; }
+
+
+
+  .hero { min-height: 480px; }
+
+  .hero-content { padding: 60px 0; }
+
+  .hero h1 { letter-spacing: -1px; }
+
+
+
+  .grid { grid-template-columns: repeat(2, 1fr); }
+
+  .finish-gallery { grid-template-columns: repeat(3, 1fr); }
+
+  .finish-item img { height: 130px; }
+
+  .work-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .work-item img { height: 190px; }
+
+
+
+  .about-layout,
+
+  .contact-layout { grid-template-columns: 1fr; }
+
+
+
+  .about-image { height: 300px; }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .container { width: 92%; }
+
+  .logo { font-size: 17px; }
+
+  .logo small { font-size: 8px; letter-spacing: 1px; }
+
+  .nav-actions .btn-outline { display: none; }
+
+
+
+  .section { padding: 55px 0; }
+
+  .hero h1 { font-size: 39px; }
+
+  .hero h2 { font-size: 18px; }
+
+
+
+  .grid,
+
+  .work-grid,
+
+  .finish-gallery,
+
+  .form-grid,
+
+  .values { grid-template-columns: 1fr; }
+
+
+
+  .service-card img { height: 210px; }
+
+  .finish-item img { height: 200px; }
+
+  .work-item img { height: 220px; }
+
+  .product-card img { height: 230px; }
+
+  .full-width { grid-column: auto; }
+
+
+
+  .contact-form { padding: 19px; }
+
+  .footer-bottom { flex-direction: column; }
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+
+      Polish <span>And Passion</span>
+
+      <small>CAR DETAILING & PROTECTION</small>
+
+    </a>
+
+
+
+    <button class="menu-toggle" id="menuToggle"
+
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+
+
+    <nav class="nav-links" id="navLinks">
+
+      <a href="#home">Home</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#ppf">PPF Finishes</a>
+
+      <a href="#products">Products</a>
+
+      <a href="#work">Recent Work</a>
+
+      <a href="#about">About Us</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+
+
+    <div class="nav-actions">
+
+      <button class="btn btn-outline" onclick="openModal('login')">Login</button>
+
+      <button class="btn" onclick="openModal('signup')">Sign Up</button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">Premium Automotive Care</div>
+
+      <h1>Polish <span>And Passion</span></h1>
+
+      <h2>Care. Protect. Drive Better.</h2>
+
+      <p>
+
+        Give your car the attention it deserves with professional
+
+        detailing, paint protection and quality car-care products.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#services" class="btn">Explore Our Services →</a>
+
+        <a href="#work" class="btn btn-outline">View Recent Work</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">What We Do</div>
+
+      <h2>Professional Car Detailing Services</h2>
+
+      <p>
+
+        From a careful exterior clean to long-lasting paint protection,
+
+        explore services designed to keep your vehicle looking its best.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="grid">
+
+      <article class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80" alt="Car being washed">
+
+        <div class="service-content">
+
+          <h3>Exterior Detailing</h3>
+
+          <p>Thorough washing and finishing to remove dirt and restore your vehicle's shine.</p>
+
+          <a class="text-link" href="#contact">Enquire about service →</a>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1533630217389-3a5e4dff5683?auto=format&fit=crop&w=800&q=80" alt="Clean car interior with dashboard and seats">
+
+        <div class="service-content">
+
+          <h3>Interior Detailing</h3>
+
+          <p>Refresh seats, dashboards and interior surfaces for a cleaner cabin.</p>
+
+          <a class="text-link" href="#contact">Enquire about service →</a>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1780558852670-3f49298ecc1f?auto=format&fit=crop&w=800&q=80" alt="Detailer polishing a car's paintwork">
+
+        <div class="service-content">
+
+          <h3>Paint Correction</h3>
+
+          <p>Help reduce the appearance of minor paint defects and swirl marks.</p>
+
+          <a class="text-link" href="#contact">Enquire about service →</a>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1620584899131-a5ff5f8fbb03?auto=format&fit=crop&w=800&q=80" alt="Technician polishing a car before paint protection">
+
+        <div class="service-content">
+
+          <h3>Ceramic Coating</h3>
+
+          <p>Add a glossy finish and an easier-to-maintain protective surface.</p>
+
+          <a class="text-link" href="#contact">Enquire about service →</a>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?auto=format&fit=crop&w=800&q=80" alt="Technician applying protective film to a car">
+
+        <div class="service-content">
+
+          <h3>PPF Installation</h3>
+
+          <p>Explore paint protection film to help protect against everyday road wear.</p>
+
+          <a class="text-link" href="#ppf">Explore PPF finishes →</a>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1608259243654-70c070e0f6ed?auto=format&fit=crop&w=800&q=80" alt="Detailer cleaning a car interior">
+
+        <div class="service-content">
+
+          <h3>Complete Car Care</h3>
+
+          <p>Combine selected detailing services based on your vehicle's needs.</p>
+
+          <a class="text-link" href="#contact">Ask for details →</a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section section-light" id="ppf">
+
+  <div class="container finish-layout">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Paint Protection Film</div>
+
+      <h2>Choose the Finish That Fits Your Style</h2>
+
+      <p>
+
+        PPF can help protect painted surfaces from everyday road debris
+
+        and minor wear. Choose a finish that suits your car's appearance.
+
+      </p>
+
+      <br>
+
+      <a href="#contact" class="btn">Ask About PPF →</a>
+
+    </div>
+
+
+
+    <div class="finish-gallery">
+
+      <article class="finish-item">
+
+        <img src="https://images.unsplash.com/photo-1708805282706-f44730b7e527?auto=format&fit=crop&w=650&q=80" alt="Glossy black car being polished">
+
+        <h3>Gloss Finish</h3>
+
+        <p>A clean, reflective appearance.</p>
+
+      </article>
+
+
+
+      <article class="finish-item">
+
+        <img src="https://images.unsplash.com/photo-1617814076231-2c58846db944?auto=format&fit=crop&w=650&q=80" alt="Matte black car finish">
+
+        <h3>Matte Finish</h3>
+
+        <p>A subtle, understated look.</p>
+
+      </article>
+
+
+
+      <article class="finish-item">
+
+        <img src="https://images.unsplash.com/photo-1617814086906-d847a8bc6fca?auto=format&fit=crop&w=650&q=80" alt="Dark car with a subtle satin-style finish">
+
+        <h3>Satin Finish</h3>
+
+        <p>A balanced, soft sheen.</p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="products">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Car Care Essentials</div>
+
+      <h2>Featured Products</h2>
+
+      <p>
+
+        Explore a sample selection of products commonly used for
+
+        cleaning and maintaining a vehicle.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="grid">
+
+      <article class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1608506375591-b90e1f955e4b?auto=format&fit=crop&w=700&q=80" alt="Exterior cleaner being used during a car wash">
+
+        <div class="product-info">
+
+          <h3>Exterior Cleaner</h3>
+
+          <p>For regular vehicle cleaning.</p>
+
+          <span class="price">Sample price: ₹499</span>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1608259243654-70c070e0f6ed?auto=format&fit=crop&w=700&q=80" alt="Detailer cleaning a vehicle interior">
+
+        <div class="product-info">
+
+          <h3>Interior Cleaner</h3>
+
+          <p>For suitable interior surfaces.</p>
+
+          <span class="price">Sample price: ₹399</span>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <img src="https://images.unsplash.com/photo-1708805282683-50a060eba80f?auto=format&fit=crop&w=700&q=80" alt="Detailer applying a car-care product to a tire">
+
+        <div class="product-info">
+
+          <h3>Surface Detailer</h3>
+
+          <p>For finishing and routine upkeep.</p>
+
+          <span class="price">Sample price: ₹599</span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+
+    <p class="note">Product names and prices are illustrative examples, not confirmed stock or live offers.</p>
+
+  </div>
+
+</section>
+
+
+
+<section class="section work-section" id="work">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Project Gallery</div>
+
+      <h2>Recent Work</h2>
+
+      <p>Browse sample automotive photographs by category.</p>
+
+    </div>
+
+
+
+    <div class="filters">
+
+      <button class="filter-btn active" data-filter="all">All</button>
+
+      <button class="filter-btn" data-filter="exterior">Exterior</button>
+
+      <button class="filter-btn" data-filter="interior">Interior</button>
+
+      <button class="filter-btn" data-filter="ppf">PPF</button>
+
+      <button class="filter-btn" data-filter="coating">Ceramic Coating</button>
+
+    </div>
+
+
+
+    <div class="work-grid">
+
+      <article class="work-item" data-category="exterior">
+
+        <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=850&q=80" alt="Technician washing a car exterior">
+
+        <div class="work-label">Exterior Detailing</div>
+
+      </article>
+
+
+
+      <article class="work-item" data-category="ppf">
+
+        <img src="https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93?auto=format&fit=crop&w=850&q=80" alt="Technician applying protective film to a car">
+
+        <div class="work-label">PPF Finish Inspiration</div>
+
+      </article>
+
+
+
+      <article class="work-item" data-category="interior">
+
+        <img src="https://images.unsplash.com/photo-1608259243654-70c070e0f6ed?auto=format&fit=crop&w=850&q=80" alt="Detailer cleaning a car interior">
+
+        <div class="work-label">Interior Care</div>
+
+      </article>
+
+
+
+      <article class="work-item" data-category="coating">
+
+        <img src="https://images.unsplash.com/photo-1708805282695-ef186db20192?auto=format&fit=crop&w=850&q=80" alt="Technician polishing a glossy car">
+
+        <div class="work-label">Coating Inspiration</div>
+
+      </article>
+
+
+
+      <article class="work-item" data-category="exterior">
+
+        <img src="https://images.unsplash.com/photo-1780558852670-3f49298ecc1f?auto=format&fit=crop&w=850&q=80" alt="Detailer correcting a car's paintwork">
+
+        <div class="work-label">Exterior Finish</div>
+
+      </article>
+
+
+
+      <article class="work-item" data-category="ppf">
+
+        <img src="https://images.unsplash.com/photo-1617814076231-2c58846db944?auto=format&fit=crop&w=850&q=80" alt="Matte black car finish">
+
+        <div class="work-label">Paint Protection Inspiration</div>
+
+      </article>
+
+    </div>
+
+
+
+    <p class="note" style="color:#c1cede">
+
+      These are illustrative photographs. Replace them with your own project photos before presenting completed customer work.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="about">
+
+  <div class="container about-layout">
+
+    <div>
+
+      <div class="eyebrow">About Us</div>
+
+      <div class="about-copy">
+
+        <h2>Passion for Every Detail</h2>
+
+        <p>
+
+          Polish And Passion is a car-care website concept focused on
+
+          detailing, paint protection and vehicle maintenance.
+
+        </p>
+
+        <p>
+
+          Our goal with this website is to make service information
+
+          easy to explore and help customers understand available
+
+          car-care options.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="values">
+
+        <div class="value">
+
+          <h3>Quality Focus</h3>
+
+          <p>Attention to the details that matter.</p>
+
+        </div>
+
+        <div class="value">
+
+          <h3>Customer First</h3>
+
+          <p>Clear information and helpful service.</p>
+
+        </div>
+
+        <div class="value">
+
+          <h3>Careful Work</h3>
+
+          <p>Choose appropriate products and methods.</p>
+
+        </div>
+
+        <div class="value">
+
+          <h3>Vehicle Care</h3>
+
+          <p>Solutions for different vehicle finishes.</p>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="#contact" class="btn">Get in Touch →</a>
+
+    </div>
+
+
+
+    <img class="about-image"
+
+      src="https://images.unsplash.com/photo-1708805282695-ef186db20192?auto=format&fit=crop&w=1100&q=85"
+      alt="Detailer carefully polishing a car">
+
+  </div>
+
+</section>
+
+
+
+<section class="section section-light" id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">Let's Talk</div>
+
+      <h2>Contact Us</h2>
+
+      <p>Have a question about a service? Send a message using the form.</p>
+
+    </div>
+
+
+
+    <div class="contact-layout">
+
+      <div class="contact-details">
+
+        <h3>How can we help?</h3>
+
+        <br>
+
+        <p><strong>Phone</strong><br>Replace with your business phone number</p>
+
+        <p><strong>Email</strong><br>Replace with your business email</p>
+
+        <p><strong>Location</strong><br>Add your actual business address</p>
+
+        <p class="note">
+
+          Update these sample contact details before publishing the website.
+
+        </p>
+
+      </div>
+
+
+
+      <form class="contact-form" id="contactForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+
+            <label for="name">Full Name</label>
+
+            <input id="name" name="name" required placeholder="Your name">
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label for="email">Email Address</label>
+
+            <input id="email" name="email" type="email" required placeholder="you\@example.com">
+
+          </div>
+
+
+
+          <div class="form-group full-width">
+
+            <label for="service">Service Interested In</label>
+
+            <select id="service" name="service" required>
+
+              <option value="">Choose a service</option>
+
+              <option>Exterior Detailing</option>
+
+              <option>Interior Detailing</option>
+
+              <option>Paint Correction</option>
+
+              <option>Ceramic Coating</option>
+
+              <option>PPF Installation</option>
+
+              <option>Car Care Products</option>
+
+            </select>
+
+          </div>
+
+
+
+          <div class="form-group full-width">
+
+            <label for="message">Message</label>
+
+            <textarea id="message" name="message" required placeholder="Tell us what you need..."></textarea>
+
+          </div>
+
+        </div>
+
+
+
+        <button class="btn" type="submit">Send Message →</button>
+
+        <p class="note" id="contactStatus">
+
+          Demo form only: messages are not sent to a server.
+
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <a href="#home" class="logo">
+
+        Polish <span>And Passion</span>
+
+        <small>CAR DETAILING & PROTECTION</small>
+
+      </a>
+
+
+
+      <nav class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#ppf">PPF</a>
+
+        <a href="#products">Products</a>
+
+        <a href="#work">Recent Work</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#contact">Contact</a>
+
+      </nav>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <p>© <span id="year"></span> Polish And Passion</p>
+
+      <p>Student website concept · Sample content and photographs</p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<!-- DEMO LOGIN / SIGNUP -->
+
+
+
+<div class="modal" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+
+  <div class="modal-box">
+
+    <button class="close-modal" onclick="closeModal()" aria-label="Close">×</button>
+
+
+
+    <h2 id="authTitle">Welcome Back</h2>
+
+    <p id="authDescription">Enter your details to continue.</p>
+
+
+
+    <div class="tabs">
+
+      <button class="tab active" id="loginTab" onclick="setMode('login')">Login</button>
+
+      <button class="tab" id="signupTab" onclick="setMode('signup')">Sign Up</button>
+
+    </div>
+
+
+
+    <form id="authForm">
+
+      <div class="form-group" id="authNameGroup" hidden>
+
+        <label for="authName">Full Name</label>
+
+        <input id="authName" autocomplete="name" placeholder="Your name">
+
+      </div>
+
+
+
+      <div class="form-group">
+
+        <label for="authEmail">Email Address</label>
+
+        <input id="authEmail" type="email" autocomplete="email" required placeholder="you\@example.com">
+
+      </div>
+
+
+
+      <div class="form-group">
+
+        <label for="authPassword">Password</label>
+
+        <input id="authPassword" type="password" autocomplete="current-password" minlength="6" required placeholder="At least 6 characters">
+
+      </div>
+
+
+
+      <button class="btn" id="authSubmit" type="submit">Login</button>
+
+      <p class="note" id="authStatus">
+
+        Demo only. This form does not create an account or authenticate users.
+
+      </p>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+
+<script>
+
+const menuToggle = document.getElementById("menuToggle");
+
+const navLinks = document.getElementById("navLinks");
+
+const authModal = document.getElementById("authModal");
+
+
+
+menuToggle.addEventListener("click", function () {
+
+  const isOpen = navLinks.classList.toggle("show");
+
+  menuToggle.setAttribute("aria-expanded", isOpen);
+
+});
+
+
+
+document.querySelectorAll("#navLinks a").forEach(function (link) {
+
+  link.addEventListener("click", function () {
+
+    navLinks.classList.remove("show");
+
+    menuToggle.setAttribute("aria-expanded", "false");
+
+  });
+
+});
+
+
+
+// Gallery filters
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+const workItems = document.querySelectorAll(".work-item");
+
+
+
+filterButtons.forEach(function (button) {
+
+  button.addEventListener("click", function () {
+
+    const filter = button.dataset.filter;
+
+
+
+    filterButtons.forEach(function (item) {
+
+      item.classList.remove("active");
+
+    });
+
+    button.classList.add("active");
+
+
+
+    workItems.forEach(function (item) {
+
+      const category = item.dataset.category;
+
+      item.style.display =
+
+        filter === "all" || category === filter ? "" : "none";
+
+    });
+
+  });
+
+});
+
+
+
+// Demo contact form
+
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+
+  event.preventDefault();
+
+
+
+  document.getElementById("contactStatus").textContent =
+
+    "Demo submitted successfully. No message was sent to a server.";
+
+
+
+  this.reset();
+
+});
+
+
+
+// Demo login and signup modal
+
+let authMode = "login";
+
+
+
+function openModal(mode) {
+
+  authModal.classList.add("open");
+
+  setMode(mode);
+
+}
+
+
+
+function closeModal() {
+
+  authModal.classList.remove("open");
+
+}
+
+
+
+function setMode(mode) {
+
+  authMode = mode;
+
+
+
+  const isSignup = mode === "signup";
+
+
+
+  document.getElementById("authTitle").textContent =
+
+    isSignup ? "Create an Account" : "Welcome Back";
+
+
+
+  document.getElementById("authDescription").textContent =
+
+    isSignup ? "Enter your details to register." : "Enter your details to continue.";
+
+
+
+  document.getElementById("authNameGroup").hidden = !isSignup;
+
+  document.getElementById("authName").required = isSignup;
+
+
+
+  document.getElementById("authPassword").autocomplete =
+
+    isSignup ? "new-password" : "current-password";
+
+
+
+  document.getElementById("authSubmit").textContent =
+
+    isSignup ? "Create Account" : "Login";
+
+
+
+  document.getElementById("loginTab").classList.toggle("active", !isSignup);
+
+  document.getElementById("signupTab").classList.toggle("active", isSignup);
+
+
+
+  document.getElementById("authStatus").textContent =
+
+    "Demo only. This form does not create an account or authenticate users.";
+
+}
+
+
+
+document.getElementById("authForm").addEventListener("submit", function (event) {
+
+  event.preventDefault();
+
+
+
+  document.getElementById("authStatus").textContent =
+
+    authMode === "signup"
+
+      ? "Demo signup complete. No account was created."
+
+      : "Demo login submitted. No authentication took place.";
+
+});
+
+
+
+authModal.addEventListener("click", function (event) {
+
+  if (event.target === authModal) closeModal();
+
+});
+
+
+
+document.addEventListener("keydown", function (event) {
+
+  if (event.key === "Escape") closeModal();
+
+});
+
+
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
+
+
+
+</body>
+
+</html>
